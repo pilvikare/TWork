@@ -1,0 +1,22 @@
+uuid: 2ff3b5c5-731c-4255-9790-aba8e18fe7af
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - TWorktheme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: TWorktheme_powered
+theme: TWorktheme
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 9bcde18f-2e9c-4ac1-93a2-3af3ba5e41a9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - TWorktheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: TWorktheme_local_actions
+theme: TWorktheme
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

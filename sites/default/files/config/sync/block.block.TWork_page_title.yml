@@ -1,0 +1,20 @@
+uuid: b34ce846-83ef-408f-a2b3-27d7ed359a01
+langcode: en
+status: true
+dependencies:
+  theme:
+    - TWork
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: TWork_page_title
+theme: TWork
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
