@@ -1,6 +1,6 @@
 uuid: 2ff3b5c5-731c-4255-9790-aba8e18fe7af
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: TWorktheme_powered
 theme: TWorktheme
 region: header
-weight: 10
+weight: -2
 provider: null
 plugin: system_powered_by_block
 settings:

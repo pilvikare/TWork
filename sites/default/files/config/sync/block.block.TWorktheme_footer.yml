@@ -13,7 +13,7 @@ _core:
 id: TWorktheme_footer
 theme: TWorktheme
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
