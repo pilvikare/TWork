@@ -1,0 +1,22 @@
+uuid: 7978a078-89a7-4b60-a2c9-dba5de3d8025
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - TWorktheme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: TWorktheme_messages
+theme: TWorktheme
+region: header
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

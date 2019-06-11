@@ -1,0 +1,25 @@
+uuid: 099cfd5e-16e2-40b2-908e-8d5b234b3eb2
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - TWorktheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: TWorktheme_branding
+theme: TWorktheme
+region: header
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
