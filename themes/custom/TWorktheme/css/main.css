@@ -5,15 +5,11 @@ h1 {
     text-align: center;
 }
 #container {
-    display: inline;   
+    width: 50%; 
+    text-align: center;
 }
-#empty {
-    background-color:blue; 
-    width:450px
-}
-#empty2 {
-    width: 22%;
-}
+
+
 
 #th {   
     background-color:grey; 
