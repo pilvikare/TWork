@@ -1,3 +1,10 @@
 body {
-    background-color: red;
+    background-color: turquoise;
+}
+#container {
+    display: inline;
+}
+
+#th {
+    margin-left: 20px;
 }

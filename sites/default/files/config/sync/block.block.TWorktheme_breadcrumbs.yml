@@ -1,6 +1,6 @@
 uuid: df12bcd5-3535-4e05-bc88-ce584f997919
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: TWorktheme_breadcrumbs
 theme: TWorktheme
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: system_breadcrumb_block
 settings:
