@@ -1,5 +1,6 @@
 body {
-    background-color: turquoise;
+    background-color: #faf7f2;
+    font-family: 'Roboto Mono', monospace;
 }
 h1 {
     text-align: center;
@@ -12,7 +13,7 @@ h1 {
 
 
 #th {   
-    background-color:grey; 
+    background-color:#2bb3c0; 
     width:100px; 
     height:100px; 
     padding:40px; 
@@ -34,4 +35,22 @@ h1 {
 }
 #clear {
     clear: both;
+}
+
+--------------------------/*tästä alkaa lomake css*/----------
+
+.progress-step.is-active .progress-marker {
+    background-color: #2bb3c0;
+}
+
+.webform-progress ul li .progress-step.is-active {
+    background-color: #2bb3c0;
+}
+h1 {
+    text-align: center;
+    color: #2bb3c0;
+}
+.webform-progress-tracker .progress-step.is-active .progress-title {
+    font-weight: bold;
+    color: #2bb3c0;
 }
