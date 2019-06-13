@@ -1,0 +1,22 @@
+uuid: 1db829df-aa8d-4888-946e-f7dc03d7c819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tyontekijan_sivu
+  module:
+    - text
+id: node.tyontekijan_sivu.body
+field_name: body
+entity_type: node
+bundle: tyontekijan_sivu
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

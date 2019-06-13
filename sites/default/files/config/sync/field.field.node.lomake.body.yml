@@ -1,0 +1,22 @@
+uuid: 3f599feb-0e50-4ad0-85bf-00c87e32cf31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lomake
+  module:
+    - text
+id: node.lomake.body
+field_name: body
+entity_type: node
+bundle: lomake
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

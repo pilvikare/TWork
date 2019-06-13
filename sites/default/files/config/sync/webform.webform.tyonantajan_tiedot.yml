@@ -12,11 +12,11 @@ id: tyonantajan_tiedot
 title: 'Työnantajan tiedot'
 description: 'T&auml;ss&auml; kerrotaan ty&ouml;nantajasta ja avoimista ty&ouml;paikoista.'
 category: ''
-elements: "yhtio:\n  '#type': webform_wizard_page\n  '#title': Yhtiö\n  yhtion_esittely:\n    '#type': textarea\n    '#title': 'Yhtiön esittely'\n    '#autocomplete': 'off'\nyhteystiedot:\n  '#type': webform_contact\n  '#title': Yhteystiedot\n  '#address_2__access': false\n  '#state_province__access': false\navoimet_tyopaikat:\n  '#type': webform_wizard_page\n  '#title': 'Avoimet työpaikat'\navoin_tyopaikka:\n  '#type': webform_name\n  '#title': 'Avoin työpaikka'\n  '#title__title': 'Avoin työpaikka'\n  '#title__help': 'Avoimen työpaikan kuvaus'\n  '#first__access': false\n  '#middle__access': false\n  '#last__access': false\n  '#suffix__access': false\n  '#degree__access': false\nkesto:\n  '#type': datetime\n  '#title': 'Työ alkaa'\n  '#date_time_element': none\n  '#date_time_step': '60'\nvaatimukset:\n  '#type': textarea\n  '#title': Vaatimukset\n  '#autocomplete': 'off'"
+elements: "yhtio:\n  '#type': webform_wizard_page\n  '#title': Yhtiö\n  yhtion_esittely:\n    '#type': textarea\n    '#title': 'Yhtiön esittely'\n    '#autocomplete': 'off'\nyhteystiedot:\n  '#type': webform_contact\n  '#title': Yhteystiedot\n  '#address_2__access': false\n  '#state_province__access': false\navoimet_tyopaikat:\n  '#type': webform_wizard_page\n  '#title': 'Avoimet työpaikat'\navoin_tyopaikka:\n  '#type': webform_name\n  '#title': 'Avoin työpaikka'\n  '#title__access': false\n  '#title__title': 'Avoin työpaikka'\n  '#title__help': 'Avoimen työpaikan kuvaus'\n  '#first__access': false\n  '#middle__access': false\n  '#last__access': false\n  '#suffix__access': false\n  '#degree__access': false\nkesto:\n  '#type': datetime\n  '#title': 'Työ alkaa'\n  '#date_time_element': none\n  '#date_time_step': '60'\nvaatimukset:\n  '#type': textarea\n  '#title': Vaatimukset\n  '#size': '30'\n  '#rows': '5'\n  '#autocomplete': 'off'\nflexbox:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_01:\n  '#type': webform_flexbox\n  '#attributes':\n    class:\n      - 'container-inline clearfix'\nflexbox_02:\n  '#type': webform_flexbox\n  '#align_items': center"
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   page: true
   page_submit_path: ''

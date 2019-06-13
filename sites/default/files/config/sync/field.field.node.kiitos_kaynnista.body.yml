@@ -1,0 +1,22 @@
+uuid: 66386014-2e67-49a6-89d0-51cb6e4d726a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.kiitos_kaynnista
+  module:
+    - text
+id: node.kiitos_kaynnista.body
+field_name: body
+entity_type: node
+bundle: kiitos_kaynnista
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

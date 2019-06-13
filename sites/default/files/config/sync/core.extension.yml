@@ -14,6 +14,8 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  feeds: 0
+  feeds_ex: 0
   field: 0
   field_ui: 0
   file: 0
@@ -53,6 +55,7 @@ theme:
   seven: 0
   TWork: 0
   TWorktheme: 0
+  business: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -1,0 +1,38 @@
+uuid: 9009edca-db73-4736-a6f4-70675450fffd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tyonantajan_sivu.body
+    - field.field.node.tyonantajan_sivu.field_tyonantajalomake
+    - node.type.tyonantajan_sivu
+  module:
+    - text
+    - user
+    - webform
+id: node.tyonantajan_sivu.default
+targetEntityType: node
+bundle: tyonantajan_sivu
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tyonantajalomake:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
