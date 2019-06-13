@@ -1,0 +1,32 @@
+uuid: c804e093-bed8-4600-904b-e517864a1974
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyontekijan_sivu
+    - node.type.tyontekijan_sivu
+    - webform.webform.tyontekijan_tiedot
+  module:
+    - webform
+id: node.tyontekijan_sivu.field_tyontekijan_sivu
+field_name: field_tyontekijan_sivu
+entity_type: node
+bundle: tyontekijan_sivu
+label: 'Työntekijän sivu'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 67a75b61-c192-4eb7-b6f8-57a9cd26a92e
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

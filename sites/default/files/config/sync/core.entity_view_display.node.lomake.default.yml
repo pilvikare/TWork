@@ -1,0 +1,38 @@
+uuid: c62726f4-72f1-4d51-977f-d447715b4134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lomake.body
+    - field.field.node.lomake.field_lomake
+    - node.type.lomake
+  module:
+    - text
+    - user
+    - webform
+id: node.lomake.default
+targetEntityType: node
+bundle: lomake
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lomake:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: bed2425e-f5f1-42c2-9d8d-7fdff38f383d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tyonantajalomake
+    - node.type.tyonantajan_sivu
+    - webform.webform.tyonantajan_tiedot
+  module:
+    - webform
+id: node.tyonantajan_sivu.field_tyonantajalomake
+field_name: field_tyonantajalomake
+entity_type: node
+bundle: tyonantajan_sivu
+label: 'työnantaja lomake'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 7490250f-6f03-4d7b-8d06-46b005a1d5b7
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

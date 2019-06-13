@@ -1,0 +1,30 @@
+uuid: e8460548-8724-4894-9c58-ae84d3a15f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.kiitos_kaynnista.body
+    - node.type.kiitos_kaynnista
+  module:
+    - text
+    - user
+id: node.kiitos_kaynnista.teaser
+targetEntityType: node
+bundle: kiitos_kaynnista
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

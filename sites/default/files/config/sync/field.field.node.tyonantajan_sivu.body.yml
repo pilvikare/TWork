@@ -1,0 +1,22 @@
+uuid: 18763467-c00d-4577-ab94-3c1bc053fbe6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tyonantajan_sivu
+  module:
+    - text
+id: node.tyonantajan_sivu.body
+field_name: body
+entity_type: node
+bundle: tyonantajan_sivu
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
