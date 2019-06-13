@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_formi
     - node.type.page
   module:
     - path
     - text
+    - webform
 _core:
   default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
 id: node.page.default
@@ -30,6 +32,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_formi:
+    weight: 121
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
   path:
     type: path
     weight: 30
