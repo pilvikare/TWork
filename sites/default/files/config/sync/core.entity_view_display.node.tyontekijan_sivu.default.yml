@@ -1,0 +1,38 @@
+uuid: 035c77e4-146b-47d5-8697-0b1fdf923ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tyontekijan_sivu.body
+    - field.field.node.tyontekijan_sivu.field_tyontekijan_sivu
+    - node.type.tyontekijan_sivu
+  module:
+    - text
+    - user
+    - webform
+id: node.tyontekijan_sivu.default
+targetEntityType: node
+bundle: tyontekijan_sivu
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tyontekijan_sivu:
+    weight: 102
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: 61e47ded-ea82-498f-b4bd-b5483262e3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tyonantajan_sivu.body
+    - node.type.tyonantajan_sivu
+  module:
+    - text
+    - user
+id: node.tyonantajan_sivu.teaser
+targetEntityType: node
+bundle: tyonantajan_sivu
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

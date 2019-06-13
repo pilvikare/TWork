@@ -1,0 +1,23 @@
+uuid: a5f8364e-cd51-4e60-ad8f-323a1a9dea5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lomake
+    - node.type.lomake
+  module:
+    - webform
+id: node.lomake.field_lomake
+field_name: field_lomake
+entity_type: node
+bundle: lomake
+label: lomake
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

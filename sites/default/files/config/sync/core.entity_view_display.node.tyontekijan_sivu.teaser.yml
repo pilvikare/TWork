@@ -1,0 +1,30 @@
+uuid: c5b3d01d-fa38-4d27-ab4f-eb7739967062
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tyontekijan_sivu.body
+    - node.type.tyontekijan_sivu
+  module:
+    - text
+    - user
+id: node.tyontekijan_sivu.teaser
+targetEntityType: node
+bundle: tyontekijan_sivu
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

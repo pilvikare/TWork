@@ -1,0 +1,28 @@
+uuid: 630466c4-5b9b-47ea-8545-abc978c9e0b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.kiitos_kaynnista.body
+    - node.type.kiitos_kaynnista
+  module:
+    - text
+    - user
+id: node.kiitos_kaynnista.default
+targetEntityType: node
+bundle: kiitos_kaynnista
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
