@@ -4,39 +4,86 @@ body {
 }
 h1 {
     text-align: center;
+    color: #7a8f10;
+    font-size: 5em;
+    text-shadow: 3px 6px #144226;
 }
 #container {
     width: 50%; 
     text-align: center;
+    display: flex;
+    position: relative;
+}
+.paraluokka {
+    margin: 33px auto 10px auto;
 }
 
-
-
 #th {   
-    background-color:#2bb3c0; 
-    width:100px; 
-    height:100px; 
+    position: absolute;
+    left: 89px;
+    background-color: #7a8f10;
+    width: 120px; 
+    height:120px; 
     padding:40px; 
-    float:left; 
     border:black; 
     border-radius:50%;
-    margin-right: 50px;
+    margin-left: 350px;
+    cursor: pointer;
+    z-index: 1;
+    /*opacity: 1;*/
 }   
+#th:hover {
+   /* opacity: 2;*/
+    z-index: 5;
+    width:200px; 
+    height:200px; 
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: top ease, width 1s, height 1s;
+}
 
 #ta {
-    background-color:green; 
-    width:100px; 
-    height:100px; 
+    position: absolute;
+    left: 372px;
+    background-color:#e8ab7d;
+    width:120px; 
+    height:120px; 
     padding:40px; 
-    float:right; 
     border:black; 
     border-radius:50%;
-    margin-left: 50px;
+    margin-right:-196px;
+    cursor: pointer;
+    z-index: 2;
+    /*opacity: 1; */
+}
+#ta:hover {
+   /* opacity: 2;*/
+    z-index: 5;
+    width:200px; 
+    height:200px; 
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 1s, height 1s;
 }
 #clear {
     clear: both;
 }
 
+@media only screen and (max-width: 768px) {
+    #toolbar-item-administration-tray {
+        visibility: hidden;
+    }
+    #toolbar-item-administration-tray:hover {
+        visibility: visible;
+    }
+    #th {
+        margin-left: 60px;
+    }
+    #ta {
+        right: -251px;
+    }
+    #block-tworktheme-account-menu {
+        margin-top: 376px;
+        margin-left: 20px;
+    }
 --------------------------/*tästä alkaa lomake css*/----------
 
 .progress-step.is-active .progress-marker {

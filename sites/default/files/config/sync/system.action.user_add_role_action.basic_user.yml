@@ -1,0 +1,14 @@
+uuid: 166b2ed7-1286-4d8d-9188-f728b0db0b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.basic_user
+  module:
+    - user
+id: user_add_role_action.basic_user
+label: 'Add the basic user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: basic_user

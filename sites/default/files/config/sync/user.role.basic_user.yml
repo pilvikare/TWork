@@ -1,0 +1,9 @@
+uuid: 9bf9dfcd-b555-4107-bd6b-f3d795fd5f9c
+langcode: en
+status: true
+dependencies: {  }
+id: basic_user
+label: 'basic user'
+weight: 3
+is_admin: null
+permissions: {  }

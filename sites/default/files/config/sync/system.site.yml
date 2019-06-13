@@ -1,11 +1,11 @@
 uuid: 545d0ca6-64dc-4d85-bd44-b8d0bdf85f66
 name: TWork
 mail: pilvi.kare@gmail.com
-slogan: ''
+slogan: 'Come to Twork - We''ll make you work!'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
