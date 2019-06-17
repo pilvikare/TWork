@@ -32,17 +32,18 @@ h1 {
     position: absolute;
 }
 #container {
-    width: 50%; 
+    width: 520px; 
+    height:240px;
     text-align: center;
-    display: flex;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 .paraluokka {
-    margin: 34px 10px 10px -12px;
+    margin: 35% auto auto -10%;
 }
 
-#th {   
-    position: absolute;
+#th {
+    float:left;
     left: 180px;
     bottom: -124px;
     background-color: #7a8f10;
@@ -51,7 +52,7 @@ h1 {
     padding:40px; 
     border:black; 
     border-radius:50%;
-    margin-left: 350px;
+    margin: 30px 30px 30px 30px;
     cursor: pointer;
     z-index: 1;
     font-size: 27px;
@@ -63,13 +64,15 @@ h1 {
     z-index: 5;
     width:180px; 
     height:180px; 
-    -webkit-transition: width 2s; /* Safari prior 6.1 */
-    transition: width 0.2s;
     font-size: 40px;
+    margin: 0;
+    /*-webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 0.5s, height 0.5s, font-size 0.5s, margin 0.5s;
+   
 }
 
 #ta {
-    position: absolute;
+    float: right;
     left: 372px;
     bottom: -124px;
     background-color:#e8ab7d;
@@ -78,30 +81,31 @@ h1 {
     padding:40px; 
     border:black; 
     border-radius:50%;
-    margin-right:-196px;
+    margin: 30px 30px 30px 30px;
     cursor: pointer;
     font-size: 27px;
     box-shadow: 2px 2px 5px 0px;
 }
 #ta:hover {
-   /* opacity: 2;*/
+ 
     z-index: 5;
     width:180px; 
     height:180px; 
-    -webkit-transition: width 2s; /* Safari prior 6.1 */
-    transition: width 0.2s;
     font-size: 40px;
+    margin: 0;
+    /*-webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 0.5s, height 0.5s, font-size 0.5s, margin 0.5s;
+
 }
 #clear {
     clear: both;
 }
 #footermenu {
     text-align: center;
-    display: flex;
-    flex-direction: row;
 }
 #footermenu ul li {
     list-style-type: none;
+    display: inline;
 }
 #footermenu a {
     color: #2bb3c0;
