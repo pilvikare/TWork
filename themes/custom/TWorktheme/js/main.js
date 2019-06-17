@@ -2,10 +2,10 @@ var ta = document.getElementById("ta");
 var th = document.getElementById("th");
 
 function thSiirra () {
-    location.href = "twork.test/user/1";
+    location.href = "http://twork.test/form/tyontekijan-tiedot";
 }
  function taSiirra () {
-    location.href = "https://www.fazerfoodco.fi/ravintolat/Ravintolat-kaupungeittain/helsinki/opetustalo---paaraide/";
+    location.href = "http://twork.test/form/tyonantajan-tiedot";
  }
 
 th.onclick = thSiirra;

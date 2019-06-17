@@ -1,71 +1,132 @@
 body {
+    /*background-image: url("/themes/custom/TWorktheme/images/turquise.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image
+    background-size: cover; /* Resize the background image to cover the entire container */
     background-color: #faf7f2;
     font-family: 'Roboto Mono', monospace;
 }
 h1 {
     text-align: center;
-    color: #7a8f10;
-    font-size: 5em;
+    color: #2bb3c0;
+    font-size: 4.5em;
     text-shadow: 3px 6px #144226;
-}
-#container {
-    width: 50%; 
-    text-align: center;
-    display: flex;
-    position: relative;
-}
-.paraluokka {
-    margin: 33px auto 10px auto;
+    margin-top: 70px;
 }
 
-#th {   
+#logocontainer {
+    position: relative;
+}
+#logopng {
     position: absolute;
-    left: 89px;
+    top: 20px;
+    left:10px;
+    height:40px;
+    width:40px;
+}
+#logotxt {
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    margin-left: 20px;
+    color: #2bb3c0;
+    position: absolute;
+}
+#container {
+    width: 520px; 
+    height:240px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paraluokka {
+    margin: 35% auto auto -10%;
+}
+
+#th {
+    float:left;
+    left: 180px;
+    bottom: -124px;
     background-color: #7a8f10;
     width: 120px; 
     height:120px; 
     padding:40px; 
     border:black; 
     border-radius:50%;
-    margin-left: 350px;
+    margin: 30px 30px 30px 30px;
     cursor: pointer;
     z-index: 1;
-    /*opacity: 1;*/
+    font-size: 27px;
+    box-shadow: 2px 2px 5px 0px;
+   
 }   
 #th:hover {
-   /* opacity: 2;*/
+   
     z-index: 5;
-    width:200px; 
-    height:200px; 
-    -webkit-transition: width 2s; /* Safari prior 6.1 */
-    transition: top ease, width 1s, height 1s;
+    width:180px; 
+    height:180px; 
+    font-size: 40px;
+    margin: 0;
+    /*-webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 0.5s, height 0.5s, font-size 0.5s, margin 0.5s;
+   
 }
 
 #ta {
-    position: absolute;
+    float: right;
     left: 372px;
+    bottom: -124px;
     background-color:#e8ab7d;
     width:120px; 
     height:120px; 
     padding:40px; 
     border:black; 
     border-radius:50%;
-    margin-right:-196px;
+    margin: 30px 30px 30px 30px;
     cursor: pointer;
-    z-index: 2;
-    /*opacity: 1; */
+    font-size: 27px;
+    box-shadow: 2px 2px 5px 0px;
 }
 #ta:hover {
-   /* opacity: 2;*/
+ 
     z-index: 5;
-    width:200px; 
-    height:200px; 
-    -webkit-transition: width 2s; /* Safari prior 6.1 */
-    transition: width 1s, height 1s;
+    width:180px; 
+    height:180px; 
+    font-size: 40px;
+    margin: 0;
+    /*-webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 0.5s, height 0.5s, font-size 0.5s, margin 0.5s;
+
 }
 #clear {
     clear: both;
 }
+#footermenu {
+    text-align: center;
+}
+#footermenu ul li {
+    list-style-type: none;
+    display: inline;
+}
+#footermenu a {
+    color: #2bb3c0;
+}
+#footermenu a:visited {
+    color:hsl(184, 59%, 14%);
+    
+
+}
+#footermenu a:active {
+    color:hsl(185, 16%, 84%);
+}
+.menu-item li {
+    margin-top: 300px;
+}
+/*.region-content {
+    
+.region-sidebar-first {
+    
+}*/
+
 
 @media only screen and (max-width: 768px) {
     #toolbar-item-administration-tray {

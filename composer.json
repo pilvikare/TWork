@@ -9,13 +9,10 @@
         "drush/drush": "^9.7",
         "twbs/bootstrap": "4.3.1",
         "drupal/webform": "^5.2",
-<<<<<<< HEAD
-        "drupal/pathauto": "^1.4"
-=======
+        "drupal/pathauto": "^1.4",
         "drupal/business": "^1.7",
         "drupal/feeds": "^3.0@alpha",
         "drupal/feeds_ex": "^1.0@alpha"
->>>>>>> 5d5c3e293fa264cb0139f088cfa3fb8da055d45f
     },
     "replace": {
         "drupal/core": "^8.7"
