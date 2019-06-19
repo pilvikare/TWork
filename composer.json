@@ -12,7 +12,8 @@
         "drupal/pathauto": "^1.4",
         "drupal/business": "^1.7",
         "drupal/feeds": "^3.0@alpha",
-        "drupal/feeds_ex": "^1.0@alpha"
+        "drupal/feeds_ex": "^1.0@alpha",
+        "drupal/webform_views": "^5.0@alpha"
     },
     "replace": {
         "drupal/core": "^8.7"

@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Työntekijän sivu'
 type: tyontekijan_sivu
-description: ''
+description: 'Basic page, jolla on työntekijän täytettävä webform'
 help: ''
 new_revision: true
 preview_mode: 1

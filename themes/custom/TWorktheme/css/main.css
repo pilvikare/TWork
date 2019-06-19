@@ -4,13 +4,24 @@ body {
     background-size: cover; /* Resize the background image to cover the entire container */
     background-color: #faf7f2;
     font-family: 'Roboto Mono', monospace;
+    width: 90%;
+    margin: auto;
 }
 h1 {
     text-align: center;
     color: #2bb3c0;
-    font-size: 4.5em;
-    text-shadow: 3px 6px #144226;
+    font-size: 3,5m;
+    /*text-shadow: 3px 6px #144226;*/
     margin-top: 70px;
+}
+.view-content h2 {
+    font-size: 1em;
+}
+/*#block-tworktheme-page-title h1 {
+    visibility: hidden;*/ /*ei näkynyt muillakaan sivuilla*/
+}
+#block-tworktheme-page-title {
+    height: 75px;
 }
 
 #logocontainer {
@@ -46,7 +57,7 @@ h1 {
     float:left;
     left: 180px;
     bottom: -124px;
-    background-color: #7a8f10;
+    background-color: #108f89;
     width: 120px; 
     height:120px; 
     padding:40px; 
@@ -97,23 +108,82 @@ h1 {
     transition: width 0.5s, height 0.5s, font-size 0.5s, margin 0.5s;
 
 }
+.hakemukset th td {
+    border: 1px black solid;
+}
+.yksi {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+}
+.kaksi {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+
+}
+.kolme {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+
+}
+.nelja {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+
+}
+.viisi {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+}
+.kuusi{
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+}
+.seitseman {
+    width: 10%;
+    text-align: center;
+    color: #04585f; 
+}
 #clear {
     clear: both;
 }
+#aboutus {
+    text-align: center;
+}
+
+#aboutustxt {
+    margin:0 auto 0 auto;
+    color: #2bb3c0;
+}
+#aboutusimg img {
+    border-radius: 20px;
+}
+#kuvadiv {
+    margin-left: 457px;
+}
+#aboutustxt {
+    text-align: center;
+}
 #footermenu {
     text-align: center;
+    color: #2bb3c0;
+    position: relative;
 }
 #footermenu ul li {
     list-style-type: none;
     display: inline;
+    position: sticky;
 }
 #footermenu a {
     color: #2bb3c0;
 }
 #footermenu a:visited {
-    color:hsl(184, 59%, 14%);
-    
-
+    color: #218a94;
 }
 #footermenu a:active {
     color:hsl(185, 16%, 84%);
@@ -121,12 +191,37 @@ h1 {
 .menu-item li {
     margin-top: 300px;
 }
-/*.region-content {
-    
+.region-content table, th, td {
+    border: 1px #2bb3c0 solid;
+}
+ /*   
 .region-sidebar-first {
     
 }*/
 
+.kiitoskaynnista p {
+    text-align: center;
+    border: 2px black solid;
+    margin: auto;
+    width: 50%;
+}
+.field--name-field-tyonantajalomake .field__label {
+    visibility: hidden;
+}
+.vastaanottoimg {
+    width: 50%;
+    height: 50%;
+    margin: 8px 5px 5px 300px;
+    border-radius: 30px;
+}
+#tiimikuva p {
+    margin: 5px 5px 5px 529px;
+    color: hsl(185, 16%, 84%);
+}
+#kiitoskuva p {
+    margin: 5px 5px 5px 479px;
+    color: hsl(185, 16%, 84%);
+}
 
 @media only screen and (max-width: 768px) {
     #toolbar-item-administration-tray {

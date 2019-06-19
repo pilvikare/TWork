@@ -2,10 +2,10 @@ var ta = document.getElementById("ta");
 var th = document.getElementById("th");
 
 function thSiirra () {
-    location.href = "http://twork.test/form/tyontekijan-tiedot";
+    location.href = "/hakemus-th";
 }
  function taSiirra () {
-    location.href = "http://twork.test/form/tyonantajan-tiedot";
+    location.href = "/hakemus_ta";
  }
 
 th.onclick = thSiirra;
