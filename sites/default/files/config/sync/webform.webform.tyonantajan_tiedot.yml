@@ -12,7 +12,7 @@ id: tyonantajan_tiedot
 title: 'Työnantajan tiedot'
 description: 'T&auml;ss&auml; kerrotaan ty&ouml;nantajasta ja avoimista ty&ouml;paikoista.'
 category: ''
-elements: "yhtio:\n  '#type': webform_wizard_page\n  '#title': Yhtiö\n  yhtion_esittely:\n    '#type': textarea\n    '#title': 'Yhtiön esittely'\n    '#autocomplete': 'off'\nyhteystiedot:\n  '#type': webform_contact\n  '#title': Yhteystiedot\n  '#address_2__access': false\n  '#state_province__access': false\navoimet_tyopaikat:\n  '#type': webform_wizard_page\n  '#title': 'Avoimet työpaikat'\navoin_tyopaikka:\n  '#type': webform_name\n  '#title': 'Avoin työpaikka'\n  '#title__access': false\n  '#title__title': 'Avoin työpaikka'\n  '#title__help': 'Avoimen työpaikan kuvaus'\n  '#first__access': false\n  '#middle__access': false\n  '#last__access': false\n  '#suffix__access': false\n  '#degree__access': false\nkesto:\n  '#type': datetime\n  '#title': 'Työ alkaa'\n  '#date_time_element': none\n  '#date_time_step': '60'\nvaatimukset:\n  '#type': textarea\n  '#title': Vaatimukset\n  '#size': '30'\n  '#rows': '5'\n  '#autocomplete': 'off'\nflexbox:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_01:\n  '#type': webform_flexbox\n  '#attributes':\n    class:\n      - 'container-inline clearfix'\nflexbox_02:\n  '#type': webform_flexbox\n  '#align_items': center"
+elements: "yhtio:\n  '#type': webform_wizard_page\n  '#title': Yhtiö\n  yhtion_esittely:\n    '#type': textarea\n    '#title': 'Yhtiön esittely'\n    '#autocomplete': 'off'\nyhteystiedot:\n  '#type': webform_contact\n  '#title': Yhteystiedot\n  '#name__title': Nimi\n  '#company__title': Yritys\n  '#phone__title': Puhelinnumero\n  '#address__title': Osoite\n  '#address_2__access': false\n  '#city__title': Kaupunki\n  '#state_province__access': false\n  '#postal_code__title': Postinumero\n  '#country__title': Maa\navoimet_tyopaikat:\n  '#type': webform_wizard_page\n  '#title': 'Avoimet työpaikat'\navoin_tyopaikka:\n  '#type': webform_name\n  '#title': 'Avoin työpaikka'\n  '#title__access': false\n  '#title__title': 'Avoin työpaikka'\n  '#title__help': 'Avoimen työpaikan kuvaus'\n  '#first__access': false\n  '#middle__access': false\n  '#last__access': false\n  '#suffix__access': false\n  '#degree__access': false\nkesto:\n  '#type': datetime\n  '#title': 'Työ alkaa'\n  '#date_time_element': none\n  '#date_time_step': '60'\nvaatimukset:\n  '#type': textarea\n  '#title': Vaatimukset\n  '#size': '30'\n  '#rows': '5'\n  '#autocomplete': 'off'\nflexbox:\n  '#type': webform_flexbox\n  '#align_items': center\nflexbox_01:\n  '#type': webform_flexbox\n  '#attributes':\n    class:\n      - 'container-inline clearfix'\nflexbox_02:\n  '#type': webform_flexbox\n  '#align_items': center"
 css: ''
 javascript: ''
 settings:
@@ -53,7 +53,9 @@ settings:
   submission_label: ''
   submission_log: false
   submission_views: {  }
-  submission_views_replace: {  }
+  submission_views_replace:
+    webform_routes: {  }
+    node_routes: {  }
   submission_user_columns: {  }
   submission_user_duplicate: false
   submission_access_denied: default
@@ -92,10 +94,10 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: url
   confirmation_title: ''
-  confirmation_message: ''
-  confirmation_url: ''
+  confirmation_message: "Kiitos ilmoituksestasi! Otamme sinuun yhteytt&auml; s&auml;hk&ouml;postitse, kun ilmoitukseesi vastataan.<br />\r\n&nbsp;"
+  confirmation_url: /tyontekijailmoitukset
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -166,4 +168,160 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  remote_post:
+    id: remote_post
+    label: 'submission employer'
+    handler_id: remote_post
+    status: true
+    conditions: {  }
+    weight: -50
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: ''
+      debug: false
+      completed_url: 'http://twork.test/page/uusi-tyoantajailmoitus'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_url: ''
+      draft_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+  action:
+    id: action
+    label: Action
+    handler_id: action
+    status: true
+    conditions: {  }
+    weight: -49
+    settings:
+      states:
+        - draft
+        - completed
+      notes: ''
+      sticky: null
+      locked: null
+      data: ''
+      message: 'Hakemuksesi on tallennettu.'
+      message_type: status
+      debug: false
+  submission_employer:
+    id: remote_post
+    label: 'submission employee'
+    handler_id: submission_employer
+    status: true
+    conditions: {  }
+    weight: -48
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: ''
+      debug: false
+      completed_url: 'http://twork.test/page/uusi-tyohakijailmoitus'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_url: ''
+      draft_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }
+  remote_post_1:
+    id: remote_post
+    label: 'Remote post'
+    handler_id: remote_post_1
+    status: true
+    conditions:
+      enabled:
+        ':input[name="avoin_tyopaikka[title][select]"]':
+          filled: true
+    weight: 0
+    settings:
+      method: POST
+      type: x-www-form-urlencoded
+      excluded_data:
+        serial: serial
+        sid: sid
+        uuid: uuid
+        token: token
+        uri: uri
+        created: created
+        completed: completed
+        changed: changed
+        in_draft: in_draft
+        current_page: current_page
+        remote_addr: remote_addr
+        uid: uid
+        langcode: langcode
+        webform_id: webform_id
+        entity_type: entity_type
+        entity_id: entity_id
+        locked: locked
+        sticky: sticky
+        notes: notes
+      custom_data: ''
+      custom_options: ''
+      debug: false
+      completed_url: 'http://twork.test/page/uusi-tyoantajailmoitus'
+      completed_custom_data: ''
+      updated_url: ''
+      updated_custom_data: ''
+      deleted_url: ''
+      deleted_custom_data: ''
+      draft_url: ''
+      draft_custom_data: ''
+      converted_url: ''
+      converted_custom_data: ''
+      message: ''
+      messages: {  }

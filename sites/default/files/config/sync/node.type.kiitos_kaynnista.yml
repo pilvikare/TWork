@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: 'Kiitos käynnistä'
 type: kiitos_kaynnista
-description: ''
+description: 'Työnantaja ohjautuu tälle sivulle hakemuksen jätettyään. Sivulle tulee linkki työpaikkauutisiin ja jo jätettyihin työnhakuilmoituksiin'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

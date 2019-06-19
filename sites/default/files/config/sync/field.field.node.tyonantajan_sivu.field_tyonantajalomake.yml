@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_tyonantajalomake
     - node.type.tyonantajan_sivu
-    - webform.webform.tyonantajan_tiedot
+    - webform.webform.tyonantaja
   module:
     - webform
 id: node.tyonantajan_sivu.field_tyonantajalomake
@@ -22,7 +22,7 @@ default_value:
     status: open
     open: ''
     close: ''
-    target_uuid: 7490250f-6f03-4d7b-8d06-46b005a1d5b7
+    target_uuid: b6c9cf4a-4f80-4940-932e-f6dbd7c32aa5
 default_value_callback: ''
 settings:
   handler: 'default:webform'

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - feeds.feed_type.news_feed
     - field.storage.node.feeds_item
     - node.type.news
   module:
@@ -21,8 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:feeds_feed'
   handler_settings:
-    target_bundles:
-      news_feed: news_feed
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false
